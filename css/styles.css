@@ -1,0 +1,145 @@
+html{
+    box-sizing: border-box;
+    background: #ffc600;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+body{
+    margin: 0;
+    margin-bottom: 10vh;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+.h1Index{
+    font-family: 'Pacifico', cursive;
+    color: white;
+    font-size: 4rem;
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.panels{
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+}
+
+.panel{
+    background: #6b0f9c;
+    box-shadow: inset 0 0 0 5px;
+    color: white;
+    text-align: center;
+    align-items: center;
+
+    transition:
+        font-size 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11),
+        flex 0.7s cubic-bezier(0.61,-0.19,0.7,-0.11),
+        background 0.2s;
+    font-size: 20px;
+    background-size: cover;
+    background-position: center;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+p{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-family: 'Pacifico', cursive;
+    
+}
+
+.panel1{
+    background-image: url(https://unsplash.com/photos/SH6vc3VOOwE/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjUwNjQxMjAx&force=true&w=2400);
+
+}
+
+.panel3{
+    background-image: url(https://unsplash.com/photos/TK5VlaGqkZc/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8NXx8bHVuY2h8ZW58MHwxfHx8MTY1MDY0MTg4Ng&force=true&w=2400);
+}
+
+.panel2{
+    background-image: url(https://unsplash.com/photos/loS68zG8P38/download?force=true&w=2400);
+}
+
+.panel4{
+    background-image: url(https://unsplash.com/photos/AUAuEgUxg5Q/download?force=true&w=2400);
+}
+
+
+.panel > * {
+    margin: 0;
+    width: 100%;
+    transition: transform 0.5s;
+    flex: 1 0 auto;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10vh;
+}
+
+.panel > *:first-child {
+    transform: translateY(-200%);
+}
+
+.panel.open-active > *:first-child{
+    transform: translateY(0);
+}
+
+
+.panel > *:last-child{
+    transform: translateY(100%);
+}
+
+.panel.open-active > *:last-child{
+    transform: translateY(0);
+}
+.panel p{
+    font-family: 'Pacifico', cursive;    
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
+    font-size: 2em;
+}
+
+.panel p:nth-child(2){
+    font-size: 4em;
+}
+
+.panel.open{
+    flex: 2;
+    font-size: 30px;
+}
+
+.cta{
+    color: white;
+    text-decoration: none;
+}
+
+.footer{
+    font-family: 'Pacifico';
+    position: fixed;
+    height: 5vh;
+    background-color: black;
+    color: #ffc600;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    text-align: center;
+    margin-bottom: 0px;
+
+}
+
+a{
+    text-decoration: none;
+    color: #ffc600;
+}
